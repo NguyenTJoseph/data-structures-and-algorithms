@@ -24,7 +24,23 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
+  let temp = []
+  arr.forEach(Object => {
+    temp.push(Object.name)
+  });
+  let localarr = temp.map(str => {
+    let letters = []
+    for (let index = str.length; index >= 0; index--) {
+      letters.push(str.charAt(index));
+    
+    }
+    let word = letters.reduce((acc, curr) => {acc = acc + curr
+      return acc}, '' )
+      return word
+  })
+  return localarr
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -35,6 +51,8 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 
 const appendTheEnd = (str) => {
   // Solution code here...
+  let newStr = str + ' The end.'
+  return newStr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,6 +70,7 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   // Solution code here...
+  arr.push(arr[0])
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,6 +90,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
+  obj.yearBorn = year
 };
 
 /* ------------------------------------------------------------------------------------------------
