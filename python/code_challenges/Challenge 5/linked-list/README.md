@@ -34,3 +34,5 @@ Review tests and description of linked list and build to what was described. Tim
 - [x] Will return true when finding a value within the linked list that exists
 - [x] Will return false when searching for a value in the linked list that does not exist
 - [x] Can properly return a collection of all the values that exist in the linked list
+
+https://github.com/3lueHippo/data-structures-and-algorithms/pull/20
