@@ -36,3 +36,32 @@ Review tests and description of linked list and build to what was described. Tim
 - [x] Can properly return a collection of all the values that exist in the linked list
 
 https://github.com/3lueHippo/data-structures-and-algorithms/pull/20
+
+# Extended Linked List
+Extend a Linked List to allow various insertion methods.
+## Challenge
+Write the following methods for the Linked List class:
+
+append
+- arguments: new value
+- adds a new node with the given value to the end of the list
+insert before
+- arguments: value, new value
+- adds a new node with the given new value immediately before the first node that has the value specified
+insert after
+- arguments: value, new value
+- adds a new node with the given new value immediately after the first node that has the value specified
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Review tests and description of linked list and build to what was described. Time:O(1) Space:O(1)
+
+- [x] Can successfully add a node to the end of the linked list
+- [x] Can successfully add multiple nodes to the end of a linked list
+- [x] Can successfully insert a node before a node located i the middle of a linked list
+- [x] Can successfully insert a node before the first node of a linked list
+- [x] Can successfully insert after a node in the middle of the linked list
+- [x] Can successfully insert a node after the last node of the linked list
+
+
+https://github.com/3lueHippo/data-structures-and-algorithms/pull/21
