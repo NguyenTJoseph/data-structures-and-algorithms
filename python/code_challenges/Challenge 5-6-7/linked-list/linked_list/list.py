@@ -60,3 +60,16 @@ class LinkedList:
 
         else:
             self.head = Node(newValue)
+
+    def kthFromEnd(self, k):
+        temp = []
+        current = self.head
+        while current and current.next != None:
+            temp.append(current.value)
+            current = current.next
+        temp.append(current.value)
+
+        try:
+            return temp[len(temp) - k - 1]
+        except IndexError:
+            return Exception
