@@ -93,3 +93,22 @@ Review tests and description of linked list and build to what was described. Tim
 - [x] “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
 
 https://github.com/3lueHippo/data-structures-and-algorithms/pull/22
+
+# Link List Zipped
+Zip two linked lists.
+## Challenge
+Write a function called zip lists
+
+- Arguments: 2 linked lists
+- Return: Linked List, zipped as noted below
+- Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+- Try and keep additional space down to O(1)
+- You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Review tests and description of linked list and build to what was described. Time:O(1) Space:O(1)
+
+- [x] Returns zipped linked list
+
+https://github.com/3lueHippo/data-structures-and-algorithms/pull/23

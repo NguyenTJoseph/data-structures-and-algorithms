@@ -76,3 +76,28 @@ class LinkedList:
             return temp[len(temp) - k - 1]
         except IndexError:
             return Exception
+
+    # Lab 08
+    @staticmethod
+    def linked_list_zip(list, list2):
+        newList = LinkedList()
+        start1 = list.head
+        start2 = list2.head
+
+        while start1.next != None and start2.next != None:
+            newList.append(start1.value)
+            newList.append(start2.value)
+            start1 = start1.next
+            start2 = start2.next
+        newList.append(start1.value)
+        newList.append(start2.value)
+
+        if start1.next == None and start2.next != None:
+            start2 = start2.next
+            newList.append(start2.value)
+
+        if start2.next == None and start1.next != None:
+            start1 = start1.next
+            newList.append(start1.value)
+
+        return newList
