@@ -4,6 +4,7 @@ class Node:
         self.next = next
 
 class LinkedList:
+    # Lab 06
     def __init__(self):
         self.head = None
 
@@ -30,6 +31,7 @@ class LinkedList:
         string += "NULL"
         return string
 
+    # Lab 07
     def append(self, value):
         current = self.head
         if current:
@@ -61,6 +63,7 @@ class LinkedList:
         else:
             self.head = Node(newValue)
 
+    # Lab 07
     def kthFromEnd(self, k):
         temp = []
         current = self.head
