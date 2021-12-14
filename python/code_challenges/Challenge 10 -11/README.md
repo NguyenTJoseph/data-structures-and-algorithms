@@ -7,3 +7,13 @@ Create Node, Stack, and Queue classes and add outlined methods and create tests 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Review description and requirements and built to what was described. Time:O(1) Space:O(1)
+
+# Stacks Queue Pseudo
+<!-- Short summary or background information -->
+Implement a Queue using two Stacks.
+## Challenge
+<!-- Description of the challenge -->
+Using two stacks to create enqueue and dequeue methods with first-in, first-out approach.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Review description and requirements and build to what was described. Time:O(1) Space:O(1)
