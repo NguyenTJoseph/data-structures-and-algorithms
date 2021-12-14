@@ -14,13 +14,14 @@ def test_enqueue_multiple():
     queue.enqueue("b")
     queue.enqueue("c")
     actual = queue.stackA.top.value
-    expected = "c"
+    expected = "a"
     assert actual == expected
+
 
 def test_dequeue():
     queue = PseudoQueue()
     queue.enqueue("a")
     queue.enqueue("b")
     actual = queue.dequeue()
-    expected = "b"
+    expected = "a"
     assert actual == expected

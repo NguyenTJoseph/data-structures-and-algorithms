@@ -78,12 +78,11 @@ class PseudoQueue:
         self.stackB = Stack()
 
     def enqueue(self, value):
-        empty = self.stackB
-        self.stackB.push(value)
-        if self.stackA.top != None:
+        while not self.stackA.is_empty():
             self.stackB.push(self.stackA.pop())
-        self.stackA = self.stackB
-        self.stackB = empty
+        self.stackB.push(value)
+        while not self.stackB.is_empty():
+            self.stackA.push(self.stackB.pop())
 
     def dequeue(self):
         return self.stackA.pop()
