@@ -81,8 +81,41 @@ class PseudoQueue:
         while not self.stackA.is_empty():
             self.stackB.push(self.stackA.pop())
         self.stackB.push(value)
+
         while not self.stackB.is_empty():
             self.stackA.push(self.stackB.pop())
 
     def dequeue(self):
         return self.stackA.pop()
+
+class Animal:
+    def __init__(self, name, type):
+        self.name = name
+        self.type = type
+
+class AnimalShelter:
+    def __init__(self):
+        self.dogs = Queue()
+        self.cats = Queue()
+
+
+    def enqueue(self, name, type):
+        if type == "dog":
+            self.dogs.enqueue(Animal(name, type))
+
+        if type == "cat":
+            self.cats.enqueue(Animal(name, type))
+
+
+    def dequeue(self, preference):
+        if preference == "dog":
+            return self.dogs.dequeue().name
+
+        if preference == "cat":
+            return self.cats.dequeue().name
+
+
+
+
+
+
