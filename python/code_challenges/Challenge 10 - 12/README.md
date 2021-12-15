@@ -19,3 +19,15 @@ Using two stacks to create enqueue and dequeue methods with first-in, first-out 
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Review description and requirements and build to what was described. Time:O(1) Space:O(1)
 https://github.com/3lueHippo/data-structures-and-algorithms/pull/25
+
+# Animal Shelter
+<!-- Short summary or background information -->
+First-in, First-out Animal Shelter
+## Challenge
+<!-- Description of the challenge -->
+Create an Animal Shelter with a first-in, first-out approach.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Review description and requirements and build to what was described. Time:O(1) Space:O(1)
+
+https://github.com/3lueHippo/data-structures-and-algorithms/pull/26
