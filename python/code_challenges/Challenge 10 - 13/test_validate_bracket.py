@@ -1,4 +1,4 @@
-from stack_queue_bracket import validate_brackets
+from stack_and_queue import validate_brackets
 
 def test_validate_brackets1():
     string = "{}"
@@ -38,12 +38,6 @@ def test_validate_brackets6():
 
 def test_validate_brackets7():
     string = "(]("
-    actual = validate_brackets(string)
-    expected = False
-    assert actual == expected
-
-def test_validate_brackets8():
-    string = "{(})"
     actual = validate_brackets(string)
     expected = False
     assert actual == expected
