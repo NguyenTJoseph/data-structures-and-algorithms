@@ -115,7 +115,37 @@ class AnimalShelter:
             return self.cats.dequeue().name
 
 
+def validate_brackets(string):
+    opener = Stack()
+    closer = Stack()
 
+    for char in string:
+        if char == "(" or char == "[" or char == "{":
+            opener.push(char)
 
+        if char == ")" or char == "]" or char == "}":
+            closer.push(char)
 
+    a = 0
+    b = 0
+    c = 0
 
+    while not opener.is_empty():
+        value = opener.pop()
+        if value == "(":
+            a += 1
+        if value == "[":
+            b += 1
+        if value == "{":
+            c += 1
+
+    while not closer.is_empty():
+        value = closer.pop()
+        if value == ")":
+            a -= 1
+        if value == "]":
+            b -= 1
+        if value == "}":
+            c -= 1
+
+    return a == 0 and b == 0 and c == 0
