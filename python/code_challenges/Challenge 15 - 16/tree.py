@@ -82,10 +82,11 @@ class BinarySearchTree(BinaryTree):
             walk(self.root, node)
 
     def contains(self, value):
-        list = []
+        status = False
         def walk(root):
             if root and root.value == value:
-                list.append(True)
+                nonlocal status
+                status = True
             if root is None:
                 return
             walk(root.left)
@@ -93,4 +94,4 @@ class BinarySearchTree(BinaryTree):
 
         
         walk(self.root)
-        return True in list
+        return status
