@@ -43,6 +43,23 @@ class BinaryTree:
         walk(self.root)
 
         return values
+    
+    def findMax(self):
+        
+        def walk(root):
+            rootVal = root.value
+            if root.left:
+                left = walk(root.left)
+                if (left.value > rootVal):
+                    root = left
+            if root.right:
+                right = walk(root.right)
+                if (right.value > rootVal):
+                    root = right
+            
+            
+            return root
+        return walk(self.root).value
 
 class BinarySearchTree(BinaryTree):
     def add(self, value):
