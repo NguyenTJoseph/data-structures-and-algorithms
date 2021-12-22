@@ -7,7 +7,7 @@ class Node:
 class BinaryTree:
     def __init__(self, root=None):
         self.root = root
-    
+
     def preOrder(self):
         values = []
         def walk(root):
@@ -19,7 +19,7 @@ class BinaryTree:
         walk(self.root)
 
         return values
-    
+
     def inOrder(self):
         values = []
         def walk(root):
@@ -43,9 +43,9 @@ class BinaryTree:
         walk(self.root)
 
         return values
-    
+
     def findMax(self):
-        
+
         def walk(root):
             rootVal = root.value
             if root.left:
@@ -56,8 +56,8 @@ class BinaryTree:
                 right = walk(root.right)
                 if (right.value > rootVal):
                     root = right
-            
-            
+
+
             return root
         return walk(self.root).value
 
@@ -92,6 +92,25 @@ class BinarySearchTree(BinaryTree):
             walk(root.left)
             walk(root.right)
 
-        
+
         walk(self.root)
         return status
+
+from Queue import Queue
+def breadth_first(tree):
+    list = []
+    breadth = Queue()
+    breadth.enqueue(tree.root)
+    while breadth.front:
+        print("pass")
+        front = None
+        front = breadth.dequeue()
+        list.append(front.value)
+
+        if front.left:
+            breadth.enqueue(front.left)
+
+        if front.right:
+            breadth.enqueue(front.right)
+    list.pop()
+    return list
