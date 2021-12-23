@@ -8,7 +8,7 @@ Set the values of each of the new nodes depending on the corresponding node valu
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Review description and requirements and build to what was described. Time:O(N) Space:O(1)
+Review description and requirements and build to what was described. Time:O(N) Space:O(N)
 https://github.com/3lueHippo/data-structures-and-algorithms/pull/31
 
 
