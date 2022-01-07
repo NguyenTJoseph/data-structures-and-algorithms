@@ -8,7 +8,7 @@ Code a working, tested implementation of Merge Sort based on the pseudocode prov
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Review description and requirements and build to what was described. Time:O(N) Space:O(1)
+Review description and requirements and build to what was described. Time:Log(N) Space:Log(N)
 https://github.com/3lueHippo/data-structures-and-algorithms/pull/33
 
 ![alt text](images\1.png)
