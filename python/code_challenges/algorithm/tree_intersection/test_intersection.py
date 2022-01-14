@@ -24,6 +24,6 @@ def test_inter3():
     assert actual == expected
     print("test passed")
 
-test_inter1()
-test_inter2()
-test_inter3()
+# test_inter1()
+# test_inter2()
+# test_inter3()
